@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coal Mine Safety Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-background">
+        <h1>Coal Mine Safety Management Dashboard</h1>
+    </header>
+    <main>
+        <div class="info-container">
+            <section class="mine-info">
+                <h2>Mine Information</h2>
+                <p><strong>Mine ID:</strong> 00123</p>
+                <p><strong>name:</strong> Westfield Coal Mine</p>
+                <p><strong>Location:</strong> West Bengal</p>
+                <p><strong>Supervisor:</strong> John Smith</p>
+            </section>
+            <section class="hazards">
+                <h2>Hazard Alerts</h2>
+                <div id="hazardList">
+                    <div class="hazard-item">Gas Leak Detected</div>
+                    <div class="hazard-item">High Temperature Alert</div>
+                </div>
+            </section>
+        </div>
+        <section class="safety-check">
+            <h2>Safety Check</h2>
+            <form id="safetyForm">
+                <label for="gasLevel">Gas Level (ppm):</label>
+                <input type="number" id="gasLevel" name="gasLevel" required>
+                <label for="temperature">Temperature (°C):</label>
+                <input type="number" id="temperature" name="temperature" required>
+                <label for="humidity">Humidity (%):</label>
+                <input type="number" id="humidity" name="humidity" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section class="safety-data">
+            <h2>Latest Safety Data</h2>
+            <div id="dataDisplay">No data available yet.</div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

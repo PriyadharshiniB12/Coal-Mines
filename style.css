@@ -1,0 +1,109 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    line-height: 1.6;
+    color: black;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    padding: 1em;
+    background: linear-gradient(to right, rgb(159, 166, 169), rgb(246, 67, 148)); 
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 1em;
+}
+.info-container {
+    display: flex;
+    gap: 1em;
+    align-items: flex-start;
+}
+.mine-info, .hazards {
+    flex: 1;
+    padding: 1.5em;
+    background-color: lightskyblue;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+.mine-info h2, .hazards h2 {
+    font-size: 1.6em; 
+    margin-bottom: 1em; 
+    color: rgb(246, 67, 148); 
+}
+.hazards #hazardList {
+    background-color: #f5f5f5;
+    padding: 1em;
+    border-radius: 5px;
+}
+.hazard-item {
+    padding: 0.8em;
+    border-bottom: 1px solid #ddd;
+}
+.hazard-item:last-child {
+    border-bottom: none;
+}
+.safety-check {
+    padding: 1.5em; 
+    background-color: lightskyblue;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.safety-check h2 {
+    font-size: 1.6em;
+    margin-bottom: 0.8em;
+}
+.safety-check label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+.safety-check input[type="number"] {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+.safety-check button {
+    background-color: rgb(246, 67, 148);
+    color: white; 
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s; 
+}
+.safety-check button:hover {
+    background-color: rgb(218, 61, 61); 
+}
+.safety-data {
+    padding: 1.5em;
+    background-color: lightskyblue;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.safety-data h2 {
+    font-size: 1.6em;
+    margin-bottom: 0.8em;
+}
+#dataDisplay {
+    background-color: lightskyblue;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
